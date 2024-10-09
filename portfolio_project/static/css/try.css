@@ -1,0 +1,261 @@
+body {
+    font-family: 'Life Savers';
+    line-height: 1.6;
+    color: #0B0F0E;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    /*background-color: #ffffff; /* Background color for the body */
+    background-image: url('images/crumpled.jpg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center; /* Center the image */
+}
+
+a {
+    color: #0B0F0E; 
+}
+
+a:hover {
+    color: #0077B5; /* Darker color on hover */
+}
+
+p {
+    color: #0B0F0E;
+    font-weight: normal;
+}
+
+h2 {
+    color: #0B0F0E;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #0B0F0E;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    /*background-color: #ffffff; /* Background color for header */
+    padding: 30px 0;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black; /* Add a black border at the bottom */
+}
+
+header nav {
+    display: flex;
+}
+
+header nav:first-child {
+    justify-content: flex-start; /* Align the first nav (Kristof Pambid) to the left */
+}
+
+header nav:last-child {
+    justify-content: flex-end; /* Align the second nav (Home, About, etc.) to the right */
+}
+
+header ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header li {
+    margin: 0 25px; /* horizontal header spacing */
+}
+
+header a {
+    color: #0B0F0E;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+header a:hover {
+    color: #0077B5;
+    font-weight: bold;
+}
+
+.about {
+    /*background-color: #ffffff; /* Background color for about section */
+    padding: 50px 50px;
+    color: #0B0F0E;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack skill categories vertically */
+    align-items: flex-start; /* Align the skill categories to the right */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.about-container h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-container p {
+    margin-bottom: 5px; /* Space below each paragraph */
+}
+
+.education {
+    margin-top: 20px; /* Space above the education section */
+}
+
+.education h3 {
+    margin-bottom: 10px; /* Space below the education heading */
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Stack skill categories vertically */
+    align-items: flex-end; /* Align the skill categories to the right */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.skills-container h2 {
+    margin-bottom: 0px; /* Space below the heading */
+}
+
+.skill-category {
+    width: 50%; /* Adjust the width of each skill category */
+    text-align: right; /* Align the text within the skill category to the left */
+    margin-bottom: 20px; /* Add spacing between skill categories */
+}
+
+.skill-category ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+    margin: 0; /* Remove margin from the list */
+    text-align: right; /* Align list items to the right */
+    width: auto; /* Allow width to be determined by content */
+    max-width: 100%; /* Ensure it does not exceed the width of its container */
+    display: inline-block; /* Shrink to fit its content */
+    justify-content: right;
+}
+
+.skill-category li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.skill-category li i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about li {
+    background: #0B0F0E;
+    color: #ffffff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.about li i {
+    margin-right: 5px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 30px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column; /* Stack skill categories vertically */
+    align-items: flex-start; /* Align the skill categories to the right */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.nontech-container {
+    display: flex;
+    flex-direction: column; /* Stack skill categories vertically */
+    align-items: flex-end; /* Align the skill categories to the right */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.nontech-item {
+    max-width: 481px; /* Adjust this value to fit the width you want */
+    margin-bottom: 30px;
+}
+
+.nontech-container ul p {
+    text-align: right;
+}
+
+.nontech-container h2 {
+    color: #0B0F0E;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+footer {
+    /*background-color: #ffffff; /* Background color for footer */
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #0B0F0E; /* Add a black border at the bottom */
+}
+
+footer nav {
+    display: flex;
+}
+
+footer nav:first-child {
+    justify-content: flex-start; /* Align the first nav (Kristof Pambid) to the left */
+}
+
+footer nav:last-child {
+    justify-content: flex-end; /* Align the second nav (Home, About, etc.) to the right */
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer li {
+    margin: 0 25px; /* horizontal header spacing */
+}
+
+footer a {
+    color: #0B0F0E;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 25px;
+    color: #0B0F0E; /* White color for the icons */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0077B5; /* Darker color on hover */
+}
