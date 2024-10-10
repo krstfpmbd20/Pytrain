@@ -1,10 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Life Savers';
     line-height: 1.6;
-    color: #0B0F0E;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 23px); /* Responsive font size */
     /*background-color: #ffffff; /* Background color for the body */
     background-image: url('images/crumpled.jpg'); /* Path to your image */
     background-size: cover; /* Ensure the image covers the entire screen */
@@ -27,13 +30,12 @@ p {
 
 h2 {
     color: #0B0F0E;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 h3 {
     color: #0B0F0E;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -78,7 +80,7 @@ header li {
 header a {
     color: #0B0F0E;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
 }
 
@@ -171,10 +173,6 @@ header a:hover {
     margin-right: 5px;
 }
 
-.experience-item, .education-item {
-    margin-bottom: 30px;
-}
-
 .experience-container {
     display: flex;
     flex-direction: column; /* Stack skill categories vertically */
@@ -191,7 +189,6 @@ header a:hover {
 
 .nontech-item {
     max-width: 481px; /* Adjust this value to fit the width you want */
-    margin-bottom: 30px;
 }
 
 .nontech-container ul p {
@@ -200,9 +197,6 @@ header a:hover {
 
 .nontech-container h2 {
     color: #0B0F0E;
-    font-size: 2rem;
-    margin-top: 0px;
-    margin-bottom: 20px;
 }
 
 footer {
@@ -240,7 +234,7 @@ footer li {
 footer a {
     color: #0B0F0E;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
 }
 
@@ -252,10 +246,128 @@ footer a {
     display: inline-block;
     margin: 0 25px;
     color: #0B0F0E; /* White color for the icons */
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
     color: #0077B5; /* Darker color on hover */
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+        padding: 30px 25px;
+    }
+
+    .skill-category, .nontech-item {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    header li {
+        margin: 5px 15px;
+    }
+
+    header a {
+        font-size: 24px;
+    }
+
+    .about {
+        padding: 30px 20px;
+    }
+
+    .skill-category, .nontech-item {
+        width: 100%;
+    }
+
+    .skills-container, .nontech-container {
+        align-items: flex-start;
+    }
+
+    .skill-category ul, .nontech-container ul p {
+        text-align: left;
+    }
+
+    footer {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header a {
+        font-size: 20px;
+    }
+
+    header li, footer li {
+        margin: 5px 10px;
+    }
+
+    .about {
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+}
+
+/* Add print styles */
+@media print {
+    body {
+        font-size: 12pt;
+        background-image: none;
+    }
+
+    header, footer {
+        display: none;
+    }
+
+    .about {
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 }
